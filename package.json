@@ -1,0 +1,34 @@
+{
+  "name": "passport-namchey",
+  "version": "1.0.0",
+  "description": "Passport strategy for authenticating with Namchey",
+  "main": "./lib",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namchey/passport-namchey.git"
+  },
+  "keywords": [
+    "passport",
+    "oauth2",
+    "authentication",
+    "passport-strategy"
+  ],
+  "author": "Namchey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/namchey/passport-namchey/issues"
+  },
+  "homepage": "https://github.com/namchey/passport-namchey#readme",
+  "dependencies": {
+    "passport-oauth2": "^1.5.0"
+  },
+  "devDependencies": {
+    "make-node": "0.4.6",
+    "mocha": "2.x.x",
+    "chai": "2.x.x",
+    "chai-passport-strategy": "1.x.x"
+  }
+}
