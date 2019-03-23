@@ -48,7 +48,7 @@ describe('Strategy', function() {
     });
 
     it('should be redirected', function() {
-      expect(url).to.equal('https://www.namchey.com/api/v1/oauth2/dialog?display=mobile&response_type=code&client_id=ABC123');
+      expect(url).to.equal('https://www.namchey.com/v1/oauth2/dialog?display=mobile&response_type=code&client_id=ABC123');
     });
   });
 
@@ -73,7 +73,7 @@ describe('Strategy', function() {
     });
 
     it('should be redirected', function() {
-      expect(url).to.equal('https://www.namchey.com/api/v1/oauth2/dialog?auth_type=reauthenticate&auth_nonce=foo123&response_type=code&client_id=ABC123');
+      expect(url).to.equal('https://www.namchey.com/v1/oauth2/dialog?auth_type=reauthenticate&auth_nonce=foo123&response_type=code&client_id=ABC123');
     });
   });
 

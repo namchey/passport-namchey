@@ -1,6 +1,8 @@
 {
-  "id":"57c566a4f3158f51474a3a9b",
-  "imgPath": {
-    "thumbnail": "https://storage.googleapis.com/namchey-gcs-asia-east/user/57c566a4f3158f51474a3a9b/user-57c566a4f3158f51474a3a9b-1548310297607-thm.jpeg"
+  "user": {
+    "id":"57c566a4f3158f51474a3a9b",
+    "imgPath": {
+      "thumbnail": "https://storage.googleapis.com/namchey-gcs-asia-east/user/57c566a4f3158f51474a3a9b/user-57c566a4f3158f51474a3a9b-1548310297607-thm.jpeg"
+    }
   }
 }

@@ -16,7 +16,29 @@ describe('Strategy#userProfile', function() {
       if (url != 'https://namchey.com/api/v1/users/me') { return callback(new Error('incorrect url argument')); }
       if (accessToken != 'token') { return callback(new Error('incorrect token argument')); }
 
-      var body = '{"id":"58da23f479e0de480b7a0d76", "email":"bring2dip@gmail.com","updatedAt":"2019-01-01T13:26:34.249Z","createdAt":"2017-03-28T08:51:00.364Z","displayName":"Deepak Bhattarai","username":"bring2dip","bio":"Yes we can.","description":"","imgPath":{"small":"https://storage.googleapis.com/namchey-gcs-asia-east/user-58da23f479e0de480b7a0d76-1512317862383-thm.jpg","medium":"https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/15590458_10202829132205922_5793841691671087094_n.jpg?oh=7b46959846bb932ab5681c64c9a939e9&oe=5A967D52","large":"https://storage.googleapis.com/namchey-gcs-asia-east/user/58da23f479e0de480b7a0d76/user-58da23f479e0de480b7a0d76-1546323676958-1600w.jpeg","thumbnail":"https://storage.googleapis.com/namchey-gcs-asia-east/user-58da23f479e0de480b7a0d76-1512317862383-thm.jpg","1080w":"https://storage.googleapis.com/namchey-gcs-asia-east/user/58da23f479e0de480b7a0d76/user-58da23f479e0de480b7a0d76-1546323676958-1080w.jpeg","480w":"https://storage.googleapis.com/namchey-gcs-asia-east/user/58da23f479e0de480b7a0d76/user-58da23f479e0de480b7a0d76-1546323676958-480w.jpeg","640w":"https://storage.googleapis.com/namchey-gcs-asia-east/user/58da23f479e0de480b7a0d76/user-58da23f479e0de480b7a0d76-1546323676958-640w.jpeg","750w":"https://storage.googleapis.com/namchey-gcs-asia-east/user/58da23f479e0de480b7a0d76/user-58da23f479e0de480b7a0d76-1546323676958-750w.jpeg","featured":"https://storage.googleapis.com/namchey-gcs-asia-east/user/58da23f479e0de480b7a0d76/user-58da23f479e0de480b7a0d76-1546323676958-1600w.jpeg","thm":"https://storage.googleapis.com/namchey-gcs-asia-east/user/58da23f479e0de480b7a0d76/user-58da23f479e0de480b7a0d76-1546323676958-thm.jpeg"},"isPhonePublic":false,"isEmailPublic":false,"isPublic":true,"socialLinks":{"namchey":"https://namchey.com/bring2dip","twitter":"https://twitter.com/bring2dip","youtube":"https://youtube.com/deepakbhattarai","instagram":"https://instagram.com/bring2dip","other":""},"slug":"bring2dip","name":"Deepak Bhattarai"}';
+      var body = `
+      {
+          "user": {
+              "_id": "58da23f479e0de480b7a0d76",
+              "email": "bring2dip@gmail.com",
+              "username": "bring2dip",
+              "displayName": "Deepak Bhattarai",
+              "description": "",
+              "phone": "90192309123123",
+              "bio": "Yes we can.",
+              "isPhoneVerified": false,
+              "receiveWeeklyEmailNewsLetter": true,
+              "receiveEmailNotification": true,
+              "isEmailVerified": false,
+              "receiveNotification": true,
+              "imgPath": {
+                  "thumbnail": "https://storage.googleapis.com/namchey-test-img-store/user/5b73bb823e80bc33cde31a4a/user-5b73bb823e80bc33cde31a4a-1550729960003-thm.jpeg"
+              },
+              "name": "Deepak Bhattarai",
+              "id": "58da23f479e0de480b7a0d76"
+          }
+      }
+      `;
       callback(null, body, undefined);
     };
 
